@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<style>
+    p{
+        color: aqua;
+        font-size: 25px;
+        padding-top: 50px;
+    }
+</style>
+
+<div class="container">
+    <p>Create a New dish to be added</p>
+    <form action="/desserts" method="POST">
+        <input type="text" name="name" placeholder="name">
+        <br>
+        <br>
+        <input type="text" name="image" placeholder="image url">
+        <br>
+        <br>
+        <button>Add..</button>
+    </form>
+</div>
+
+<a href="/desserts">Back</a> 
+<% include partials/footer %>
