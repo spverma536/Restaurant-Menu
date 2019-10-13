@@ -1,7 +1,7 @@
-var express = require("express");
-var app = express();
-var bodyParser = require("body-parser");
-var mongoose = require("mongoose");
+var express = require("express"),
+    app = express(),
+    bodyParser = require("body-parser"),
+    mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost/desserts");
 
@@ -57,7 +57,7 @@ app.post("/starters", function(req, res){
 });
 
 var mains = [
-    {name: "Brick-Pressed Half Chicken", img: "https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18235802/fc59ra036-02-thumb16x9.jpg"},
+    {name: "chicken tikka", img: "https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18235802/fc59ra036-02-thumb16x9.jpg"},
     {name: "Mushroom Lasagna", img: "https://www.cscassets.com/recipes/wide_cknew/wide_60207.jpg"},
     {name: "Sweet Potato Vinaigrette", img: "https://asdoasdiadnsiuhiwuh.files.wordpress.com/2010/10/sweet_pot_salad_1-scaled1000.jpg"},
     {name: "Chiang Mai Sausage", img: "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/thanin_market_chiang_mai_sausage2.jpg?itok=Qj15vgp6"},
